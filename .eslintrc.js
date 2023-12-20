@@ -5,6 +5,8 @@ module.exports = {
         sourceType: 'module',
     },
     extends: [
+        "prettier",
+        "plugin:prettier/recommended",
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
         'plugin:@typescript-eslint/recommended',
@@ -12,17 +14,15 @@ module.exports = {
         'plugin:import/warnings',
         'plugin:import/typescript',
         'plugin:jsx-a11y/recommended',
-        "prettier",
-        "plugin/prettier/recommended"
     ],
     rules: {
-        'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': ['error'],
-        '@typescript-eslint/no-var-requires': 'off',
-        'react/prop-types': 'off',
-        'react/jsx-uses-react': 'off',
-        'react/react-in-jsx-scope': 'off',
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        'no-unused-vars': 0,
+        '@typescript-eslint/no-unused-vars': 2,
+        '@typescript-eslint/no-var-requires': 0,
+        'react/prop-types': 0,
+        'react/jsx-uses-react': 0,
+        'react/react-in-jsx-scope': 0,
+        '@typescript-eslint/explicit-module-boundary-types': 0,
     },
     settings: {
         react: {
