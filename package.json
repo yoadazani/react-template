@@ -1,12 +1,12 @@
 {
-    "name": "react-template",
+    "name": "@yoadazani/react-template",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "bin": "bin/bin-cli.js",
+    "bin": "bin/cli.js",
     "repository": {
         "git": "git",
-        "url": "https://github.com/yourname/yourgithubrepo"
+        "url": "https://github.com/yoadazani/react-template.git"
     },
     "scripts": {
         "start": "webpack serve --config webpack/webpack.config.js --env env=dev",
@@ -14,7 +14,7 @@
         "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\" ",
         "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,css,scss,md}\" ",
         "test": "jest --watchAll",
-        "postinstall": "husky install"
+        "postinstall": "npx husky install"
     },
     "keywords": [],
     "author": "",
@@ -28,6 +28,7 @@
         "@radix-ui/react-slot": "^1.0.2",
         "@types/react": "^18.2.45",
         "@types/react-dom": "^18.2.18",
+        "child_process": "^1.0.2",
         "class-variance-authority": "^0.7.0",
         "clsx": "^2.0.0",
         "postcss": "^8.4.32",
