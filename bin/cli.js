@@ -24,7 +24,7 @@ const runCommand = (command) => {
 const clone = runCommand(gitCheckoutCommand)
 if (!clone) process.exit(1)
 
-execSync(`Clone application from registry...`)
+console.log(`Clone application from registry...`)
 
 const install = runCommand(installDependencies)
 if (!install) process.exit(1)
