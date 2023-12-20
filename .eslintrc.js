@@ -5,8 +5,8 @@ module.exports = {
         sourceType: 'module',
     },
     extends: [
-        "prettier",
-        "plugin:prettier/recommended",
+        'prettier',
+        'plugin:prettier/recommended',
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
         'plugin:@typescript-eslint/recommended',
@@ -17,6 +17,7 @@ module.exports = {
     ],
     rules: {
         'no-unused-vars': 0,
+        'import/no-unresolved': 0,
         '@typescript-eslint/no-unused-vars': 2,
         '@typescript-eslint/no-var-requires': 0,
         'react/prop-types': 0,

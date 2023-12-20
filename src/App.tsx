@@ -1,15 +1,19 @@
 import React from 'react'
-import profileImage from './assets/profile.png'
-import Count from './components/Count'
+import { AddUser } from './components/shared/AddUser'
+import { Users } from './components/pages/home/Users'
+import { DeleteUser } from './components/shared/DeleteUser'
 
 export const App = () => {
-    const name = "process.env.name"
+    const name = 'process.env.name'
 
     return (
-        <div>
-            <h1>Hello World my name is  and I am 27 years old</h1>
-            <img src={profileImage} alt="profile" width="200" height="200" />
-            <Count />
+        <div className="max-w-xl mx-auto">
+            <h1>Hello World my name is {name} and I am 27 years old</h1>
+            <Users />
+            <div className="p-4 space-y-4 border border-slate-500 rounded-lg">
+                <AddUser />
+                <DeleteUser />
+            </div>
         </div>
     )
 }

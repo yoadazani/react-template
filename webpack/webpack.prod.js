@@ -1,6 +1,4 @@
-
 module.exports = {
-    mode: "production",
-    devtool: "source-map",
-
+    mode: 'production',
+    devtool: 'source-map',
 }
